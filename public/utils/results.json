@@ -1,0 +1,63 @@
+{
+    "state": "Haryana",
+    "lastUpdated": "2024-10-08T16:10:00",
+    "partyResults": {
+        "cards": [{
+                "partyId": "101",
+                "party": "BJP",
+                "won": 50,
+                "color": "#ff944d"
+            },
+            {
+                "partyId": "102",
+                "party": "INC",
+                "won": 35,
+                "color": "#19aaed"
+            },
+            {
+                "partyId": "103",
+                "party": "INLD",
+                "won": 2,
+                "color": "#ea0d35"
+            },
+            {
+                "partyId": "104",
+                "party": "IND",
+                "won": 3,
+                "color": "#999966"
+            }
+        ]
+    },
+    "partyWiseTable": {
+        "columns": ["Party", "Won", "Leading", "Total"],
+        "rows": [{
+                "partyId": "101",
+                "party": "BJP",
+                "won": 26,
+                "leading": 24,
+                "total": 50
+            },
+            {
+                "partyId": "102",
+                "party": "INC",
+                "won": 20,
+                "leading": 15,
+                "total": 35
+            },
+            {
+                "partyId": "103",
+                "party": "INLD",
+                "won": 0,
+                "leading": 2,
+                "total": 2
+            },
+            {
+                "partyId": "104",
+                "party": "IND",
+                "won": 2,
+                "leading": 1,
+                "total": 3
+            }
+        ]
+    }
+}
