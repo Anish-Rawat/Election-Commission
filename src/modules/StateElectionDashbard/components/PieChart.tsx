@@ -27,19 +27,6 @@ const PieChart: React.FC<PieChartProps> = ({ pieChartData }) => {
     ],
   };
 
-  const chartOptions = {
-    plugins: {
-      legend: {
-        display: true,
-        position: "bottom", // Position the legend at the bottom
-        align: "center", // Align the legend items horizontally
-        labels: {
-          boxWidth: 20, // Adjust the width of the color box in the legend
-        },
-      },
-    },
-  };
-
   return (
     <Box
       sx={{
@@ -49,7 +36,7 @@ const PieChart: React.FC<PieChartProps> = ({ pieChartData }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "auto",
+        margin: "20px auto",
       }}
     >
       <Typography

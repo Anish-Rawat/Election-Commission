@@ -5,6 +5,7 @@ import PartyResultCard from "./components/PartyResultCard";
 import { ElectionDataState } from "./type";
 import PartyResultTable from "./components/PartyResultTable";
 import PieChart from "./components/PieChart";
+import Navbar from "../../components/navbar";
 
 const StateElectionDashboard = () => {
   const [error, setError] = useState<string | null>(null);
@@ -41,6 +42,7 @@ const StateElectionDashboard = () => {
 
         {electionData && (
           <Box>
+            <Navbar/>
             <Header state={electionData.state} />
             <Box
               sx={{

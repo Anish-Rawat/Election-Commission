@@ -1,8 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import StateElectionDashboard from "./modules/StateElectionDashbard";
+import { routes } from "./routes/routes";
 
 function App() {
-  return <StateElectionDashboard />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        {routes.map(({path,element},index)=> <Route key={index} path={path} element={element}/>)}
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

@@ -8,11 +8,19 @@ const RootComponent = () => {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 3000);
+    const userInfoString = localStorage.getItem("userInfo");
+    const userInfo = userInfoString ? JSON.parse(userInfoString) : null;
+    const token = userInfo?.token;
 
-    return () => clearTimeout(timer);
+    if (token) {
+      setShowSplash(false);
+    } else {
+      const timer = setTimeout(() => {
+        setShowSplash(false);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
